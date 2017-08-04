@@ -24,7 +24,7 @@ var optionDefinitions = [
   { name: 'sampleSlotName', type: String },
   { name: 'sampleSlotValue', type: String }
 ];
-var WebpackageReadmeGenerator = require('../lib/cubx-generate-webpackage-readme-file');
+var WebpackageReadmeGenerator = require('cubx-generate-webpackage-readme-file');
 
 
 
