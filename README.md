@@ -14,19 +14,7 @@ ubx-generate-webpackage-readme-file -p <...> -s <...> [--includeSample <...> --s
 ### Other npm modules
 
 ```javascript
-
-var optionDefinitions = [
-  { name: 'webpackagePath', type: String, defaultOption: true, alias: 'p' },
-  { name: 'storeName', type: String, alias: 's' },
-  { name: 'includeSample', type: Boolean },
-  { name: 'includeInit', type: Boolean },
-  { name: 'sampleArtifactId', type: String },
-  { name: 'sampleSlotName', type: String },
-  { name: 'sampleSlotValue', type: String }
-];
 var WebpackageReadmeGenerator = require('cubx-generate-webpackage-readme-file');
-
-
 
 var webpackagePath = ...;
 
