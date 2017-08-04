@@ -1,0 +1,55 @@
+{
+  "name": "cubx-generate-webpackage-readme-file",
+  "version": "1.0.0",
+  "description": "Module to generate a README file describing its artifacts",
+  "main": "lib/cubx-generate-webpackage-readme-file.js",
+  "bin": {
+    "cubx-generate-webpackage-readme-file": "./bin/cubx-generate-webpackage-readme-file.js"
+  },
+  "scripts": {
+    "prepublish": "npm run-script lint",
+    "lint": "eslint lib/**/*.js bin/**/*.js test/unit/**/*.js *.js",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cubbles/cubx-generate-webpackage-readme-file.git"
+  },
+  "keywords": [
+    "cubbles",
+    "readme",
+    "doc",
+    "documentation"
+  ],
+  "author": "Edwin Gamboa <edwingamboa355@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cubbles/cubx-generate-webpackage-readme-file/issues"
+  },
+  "homepage": "https://github.com/cubbles/cubx-generate-webpackage-readme-file#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "grunt": "^0.4.5",
+    "grunt-githooks": "^0.3.1",
+    "grunt-shell": "^1.1.2",
+    "ink-docstrap": "^1.1.1",
+    "jsdoc": "^3.4.0",
+    "load-grunt-configs": "^0.4.1",
+    "load-grunt-tasks": "^2.0.0",
+    "mocha": "^3.3.0",
+    "proxyquire": "^1.7.10",
+    "sinon": "^2.2.0",
+    "sinon-chai": "^2.10.0",
+    "time-grunt": "~1.0.0"
+  },
+  "dependencies": {
+    "command-line-args": "^4.0.4",
+    "fs-extra": "^3.0.1",
+    "path": "^0.12.7",
+    "eslint": "^3.3.1",
+    "eslint-config-standard": "^6.0.0",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-standard": "^2.0.1",
+    "mustache": "^2.2.0"
+  }
+}
