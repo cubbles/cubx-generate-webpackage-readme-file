@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 'use strict';
 var WebpackageReadmeGenerator = require('../lib/cubx-generate-webpackage-readme-file');
 var commandLineArgs = require('command-line-args');
