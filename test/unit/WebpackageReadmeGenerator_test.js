@@ -2,12 +2,12 @@
 (function () {
   'use strict';
   describe('WebpackageReadmeGenerator', function () {
-    var WebpackageReadmeGenerator;
-    var wpReadmeGenerator;
-    var fs;
-    var sampleWpPath;
-    var path;
-    var newVersion = '0.1.0';
+    let WebpackageReadmeGenerator;
+    let wpReadmeGenerator;
+    let fs;
+    let sampleWpPath;
+    let path;
+    const newVersion = '0.1.0';
     beforeEach(function () {
       fs = require('fs-extra');
       path = require('path');
@@ -18,7 +18,7 @@
       wpReadmeGenerator = new WebpackageReadmeGenerator(sampleWpPath, newVersion);
     });
     describe('#_loadManifest', function () {
-      var expectedManifest;
+      let expectedManifest;
       it('should load the manifest properly', function () {
         expectedManifest = JSON.parse(fs.readFileSync(path.join(sampleWpPath, 'manifest.webpackage'), 'utf8'));
         expect(wpReadmeGenerator._loadManifest()).to.deep.equal(expectedManifest);
@@ -31,7 +31,7 @@
       });
     });
     describe('#generateReadmeFile', function () {
-      var expectedReadme;
+      let expectedReadme;
       it('it should generate the README file with a sample component and demonstrating how to init', function () {
         expectedReadme = fs.readFileSync(path.join(sampleWpPath, 'README_Sample_Init.md'), 'utf8');
         wpReadmeGenerator.templateValues.storeName = 'sandbox';
@@ -60,7 +60,7 @@
       });
     });
     describe('#setOptions', function () {
-      var options;
+      let options;
       it('it should set the given options', function () {
         options = {
           storeName: 'sandbox',
@@ -136,9 +136,9 @@
       });
     });
     describe('#_logAndThrowError', function () {
-      var errorName = 'Test Error';
-      var errorMessage = 'Test error message';
-      var spyConsole;
+      const errorName = 'Test Error';
+      const errorMessage = 'Test error message';
+      let spyConsole;
       beforeEach(function () {
         spyConsole = sinon.spy(console, 'error');
       });

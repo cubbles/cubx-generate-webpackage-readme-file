@@ -1,9 +1,9 @@
 #! /usr/bin/env node
 'use strict';
-var WebpackageReadmeGenerator = require('../lib/cubx-generate-webpackage-readme-file');
-var commandLineArgs = require('command-line-args');
+const WebpackageReadmeGenerator = require('../lib/cubx-generate-webpackage-readme-file');
+const commandLineArgs = require('command-line-args');
 
-var optionDefinitions = [
+const optionDefinitions = [
   { name: 'webpackagePath', type: String, defaultOption: true, alias: 'p' },
   { name: 'storeName', type: String, alias: 's' },
   { name: 'includeSample', type: Boolean },
@@ -13,7 +13,7 @@ var optionDefinitions = [
   { name: 'sampleSlotValue', type: String }
 ];
 
-var options = commandLineArgs(optionDefinitions);
-var generator = new WebpackageReadmeGenerator(options.webpackagePath);
+const options = commandLineArgs(optionDefinitions);
+const generator = new WebpackageReadmeGenerator(options.webpackagePath);
 generator.setTemplateValues(options);
 generator.generateReadmeFile();
