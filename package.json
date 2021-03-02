@@ -1,6 +1,6 @@
 {
   "name": "cubx-generate-webpackage-readme-file",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Module to generate a README file describing its artifacts",
   "main": "lib/cubx-generate-webpackage-readme-file.js",
   "bin": {
